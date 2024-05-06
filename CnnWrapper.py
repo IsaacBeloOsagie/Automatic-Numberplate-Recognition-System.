@@ -5,17 +5,10 @@ from sklearn.metrics import f1_score # This imports the f1_score function from t
 # Import TensorFlow:
 import tensorflow as tf # TensorFlow is a powerful framework for building and training deep learning models.
 from tensorflow import keras 
-
-# from keras.models import Sequential # Import the Sequential model class from Keras to form the framework for a Sequential neural network:
-# from keras.layers import Dense, Flatten, MaxPooling2D, Dropout, Conv2D
-# import keras.backend as K
-# from keras.preprocessing import image as ImageDataGenerator
-
-from keras.api.models import Sequential # Import the Sequential model class from Keras to form the framework for a Sequential neural network:
-from keras.api.layers import Dense, Flatten, MaxPooling2D, Dropout, Conv2D
-import keras.api.backend as K
-from keras.api.preprocessing import image as ImageDataGenerator
-
+from keras.models import Sequential # Import the Sequential model class from Keras to form the framework for a Sequential neural network:
+from keras.layers import Dense, Flatten, MaxPooling2D, Dropout, Conv2D
+import keras.backend as K
+from keras.preprocessing import image as ImageDataGenerator
 
 class CnnWrapper :
     def __init__(self, file_image) :
